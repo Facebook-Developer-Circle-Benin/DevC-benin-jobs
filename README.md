@@ -105,8 +105,6 @@ Note: For windows user, run this command using [git bash](https://git-scm.com/do
 
 ## Contributions Best Practices
 
-[![GitHub issues](https://img.shields.io/github/issues/codeuino/Social-Platform-Donut?logo=github)](https://github.com/codeuino/Social-Platform-Donut/issues) ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/codeuino/Social-Platform-Donut?logo=git&logoColor=white) ![GitHub contributors](https://img.shields.io/github/contributors/codeuino/Social-Platform-Donut?logo=github)
-
 **Commits**
 * Write clear meaningful git commit messages (Do read [this](http://chris.beams.io/posts/git-commit/)).
 * Make sure your PR's description contains GitHub's special keyword references that automatically close the related issue when the PR is merged. (Check [this](https://github.com/blog/1506-closing-issues-via-pull-requests) for more info)

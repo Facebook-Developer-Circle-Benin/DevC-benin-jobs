@@ -6,7 +6,7 @@ DevC Benin Jobs
 Technical Features
 --------------------
 
-![Image](https:///res-console.cloudinary.com/dkzeltrml/thumbnails/transform/v1/image/upload/v1597847579/https:///res-console.cloudinary.com/dkzeltrml/thumbnails/transform/v1/image/upload/Y19zY2FsZSx3XzEzNjY=/v1597847579/U2NyZWVuc2hvdF8xMTdfbjQ1cndv/template_primary)
+![Image](https://res.cloudinary.com/dkzeltrml/image/upload/v1597847579/Screenshot_117_n45rwo.png)
 
 
 Tech Stack

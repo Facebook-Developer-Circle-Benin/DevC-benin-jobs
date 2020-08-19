@@ -75,6 +75,7 @@ Setting Up Database
 
 Make sure you have MongoDB installed on your computer. If not get it here [MongoDB Community Server](https://www.mongodb.com/download-center/community)
 
+## For Unix based OS
 1. Open the terminal, locate the "scripts" folder and run the dbcreater.sh
 
     ```shell
@@ -83,6 +84,12 @@ Make sure you have MongoDB installed on your computer. If not get it here [Mongo
 
 Note: For windows user, run this command using [git bash](https://git-scm.com/download/win)
 
+## For Windows Users
+1. Navigate to the installation folder of MongoDB.
+
+2. Open the bin folder
+
+3. Run mongo.exe
 
 ## Contributions Best Practices
 

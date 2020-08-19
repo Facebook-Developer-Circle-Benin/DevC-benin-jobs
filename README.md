@@ -21,6 +21,8 @@ Installation
 
 [![NODE JS](http://img.shields.io/badge/NodeJS-required-teal.svg?logo=node.js)](https://nodejs.org/en/) [![NPM](http://img.shields.io/badge/npm-required-red.svg?logo=npm)](http://npmjs.com/)
 
+To ensure optimal functionality, ensure to use Node.js versions 8.12.0 to 10.20.0
+
 To get this project running locally on your machine follows the steps below in order:
 
 1. fork this repo

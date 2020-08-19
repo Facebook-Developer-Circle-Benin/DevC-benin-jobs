@@ -1,5 +1,6 @@
 DevC Benin Jobs
 --------
+DevC Benin Jobs is a web application that helps to connect job seekers to potential employers and employers to job seekers
 
 
 

@@ -8,6 +8,18 @@ Technical Features
 
 ![Image](https://res.cloudinary.com/dkzeltrml/image/upload/v1597847579/Screenshot_117_n45rwo.png)
 
+![Image2](https://res.cloudinary.com/dkzeltrml/image/upload/v1597848546/Screenshot_116_mzegkj.png)
+
+![Signup/signin](https://res.cloudinary.com/dkzeltrml/image/upload/v1597848771/Screenshot_115_ocoey3.png)
+
+![image](https://res.cloudinary.com/dkzeltrml/image/upload/v1597848953/Screenshot_114_lzkjfu.png)
+
+You can check out the full design via this [link](https://www.figma.com/file/AAbNtPk8EFhndeMqWpxfvT/DevC-Jobs?node-id=3%3A694) 
+
+
+
+
+
 
 Tech Stack
 --------------------

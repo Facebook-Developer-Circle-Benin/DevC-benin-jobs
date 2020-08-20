@@ -6,6 +6,21 @@ DevC Benin Jobs is a web application that helps to connect job seekers to potent
 
 Technical Features
 --------------------
+Members of the job portal should be able to do the following. 
+
+* Register/signup as a recruiter or a job seeker. 
+
+* Recruiters should be able to post and close job openings and review applications. 
+
+* Job seekers should be able to filter and search for jobs and gigs. 
+
+* Job seekers should be able to get job recommendations based on their profile and interests. 
+
+* Job seekers should be able to upload their CVs and have a compelling profile. 
+
+* Have an admin panel with site analytics of both job seekers and recruiters. 
+
+* Admins should also have a database of members signups. 
 
 ![Image](https://res.cloudinary.com/dkzeltrml/image/upload/v1597847579/Screenshot_117_n45rwo.png)
 

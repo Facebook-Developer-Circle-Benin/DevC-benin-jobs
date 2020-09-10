@@ -1,0 +1,79 @@
+// Variables
+$sm: 10px;
+$xs: 5px;
+$md: 30px;
+$lg: 50px;
+$xlg: 60px;
+
+@mixin padding-horizontal ($value) {
+  padding-right: $value;
+  padding-left: $value;
+}
+
+@mixin padding-vertical ($value) {
+  padding-top: $value;
+  padding-bottom: $value;
+}
+
+@mixin margin-horizontal ($value) {
+  margin-right: $value;
+  margin-left: $value;
+}
+
+@mixin margin-vertical ($value) {
+  margin-top: $value;
+  margin-bottom: $value;
+}
+
+/**End of @mixins**/
+
+.padding-lg { padding: $lg; }
+.padding-md { padding: $md }
+.padding-sm { padding: $sm; }
+.padding-xs { padding: $xs; }
+.padding-bottom-sm { padding-bottom: $sm; }
+.padding-bottom-xs { padding-bottom: $xs; }
+.padding-bottom-md { padding-bottom: $md; }
+.padding-bottom-lg { padding-bottom: $lg; }
+.padding-top-lg { padding-top: $lg; }
+.padding-top-md { padding-top: $md; }
+.padding-top-sm { padding-top: $sm; }
+.padding-left-md { padding-left: $md; }
+.padding-left-lg { padding-left: $lg; }
+.padding-left-sm { padding-left: $sm; }
+.padding-right-sm { padding-right: $sm; }
+.padding-right-md { padding-right: $md; }
+.padding-right-lg { padding-right: $lg; }
+.padding-left-xlg { padding-left: $xlg; }
+.padding-horizontal-xs { @include padding-horizontal($xs) }
+.padding-horizontal-sm { @include padding-horizontal($sm) }
+.padding-horizontal-md { @include padding-horizontal($md) }
+.padding-horizontal-lg { @include padding-horizontal($lg) }
+.padding-horizontal-xlg { @include padding-horizontal($xlg) }
+.padding-vertical-xs { @include padding-vertical($xs) }
+.padding-vertical-sm { @include padding-vertical($sm) }
+.padding-vertical-md { @include padding-vertical($md) }
+.padding-vertical-lg { @include padding-vertical($lg) }
+
+.margin-bottom-sm {margin-bottom: $sm; }
+.margin-bottom-xs { margin-bottom: $xs; }
+.margin-bottom-md { margin-bottom: $md; }  
+.margin-bottom-lg { margin-bottom: $lg; }
+.margin-left-md { margin-left: $md; }
+.margin-right-sm { margin-right: $sm; }
+.margin-right-md { margin-right: $md; }
+.margin-right-lg { margin-right: $lg; }
+.margin-right-xs { margin-right: $xs; }
+.margin-left-sm { margin-left: $sm; }
+.margin-top-md { margin-top: $md; }
+.margin-top-lg { margin-top: $lg; }
+.margin-top-sm { margin-top: $sm; }
+.margin-horizontal-xs { @include margin-horizontal($xs) }
+.margin-horizontal-sm { @include margin-horizontal($sm) }
+.margin-horizontal-md { @include margin-horizontal($md) }
+.margin-horizontal-lg { @include margin-horizontal($lg) }
+.margin-horizontal-xlg { @include margin-horizontal($xlg) }
+.margin-vertical-md { @include margin-vertical($md) }
+
+.line-height-24 { line-height: 24px };
+.line-height-42 { line-height: 42px };

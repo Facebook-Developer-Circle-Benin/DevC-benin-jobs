@@ -1,0 +1,69 @@
+@mixin media-breakpoint-up($value) {
+  @if $value == sm {
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) { @content; }
+  }
+  @else if $value == md {
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) { @content;}
+  }
+  @else if $value == lg {
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) { @content; }
+  }
+  @else if $value == lg {
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) { @content; }
+  }
+  @else {
+    @media (min-width: 0px) { @content; }
+  }
+}
+
+@mixin media-breakpoint-down($value) {
+  @if $value == xs {
+    // Extra small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) { @content; }
+  }
+  @else if $value == sm {
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) { @content; }
+  }
+  @else if $value == md {
+    // Medium devices (tablets, less than 992px)
+    @media (max-width: 991.98px) { @content; }
+  }
+  @else if $value == lg {
+    // Large devices (desktops, less than 1200px)
+    @media (max-width: 1199.98px) { @content; }
+  }
+  // Extra large devices (large desktops)
+  // No media query since the extra-large breakpoint has no upper bound on its width
+}
+
+@mixin media-breakpoint-only($value) {
+  @if $value == xs {
+    // Extra small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) { @content; }
+  }
+  @else if $value == sm {
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) and (max-width: 767.98px) { @content; }
+  }
+  @else if $value == md {
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) and (max-width: 991.98px) { @content; }
+  }
+  @else if $value == lg {
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) and (max-width: 1199.98px) { @content; }
+  }
+  @else if $value == xlg {
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) { @content; }
+  }
+}
+
+@mixin media-breakpoint-custom-down($value) {
+  @media (max-width: #{$value}) { @content; }
+}

@@ -1,0 +1,18 @@
+@import 'variables';
+.bg-primary-light { background: $primary-color-light; }
+.bg-primary-light-opacity { background: $primary-color-light-opacity; }
+.bg-primary-dark { background: $primary-color-dark; }
+.bg-primary-dark-opacity { background: $primary-color-dark-opacity }
+.bg-dark { background: $dark; }
+.bg-white { background: $white; }
+.bg-gray-light { background: $gray-color-light; }
+.bg-gray-dark { background: $gray-color-dark; }
+.bg-facebook { background: $facebook-color; }
+.bg-google { background: $google-color; }
+
+.color-gray { color: $gray-color-dark; }
+.color-dark { color: $dark; }
+.color-white { color: $white; }
+.color-primary-dark { color: $primary-color-dark; }
+.color-primary-light { color: $primary-color-light; }
+.color-google { color: $google-color; }

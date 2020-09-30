@@ -1,0 +1,58 @@
+@import 'breakpoints';
+.search-jobs-section {
+  .rectangle {
+    position: absolute;
+    width: 33px;
+    height: 19px;
+    background: rgba(51, 111, 146, 0.12);
+    border-radius: 55px;
+    &:nth-child(1) {
+      left: 30px;
+      top: 30px;
+    }
+    &:nth-child(2) {
+      right: 40px;
+      top: 30px;
+    }
+    &:nth-child(3) {
+      left: 20%;
+      bottom: 30px;
+    }
+    &:nth-child(4) {
+      right: 40px;
+      bottom: 30px;
+    }
+  }
+  .search-container {
+    max-width: 450px;
+  }
+}
+
+.job-card {
+  flex: 1 0 100%;
+  margin: 0 2% 4% 0;
+  height: auto;
+  .job-svg { 
+    width: 50px;
+    height: auto;
+   }
+  @include media-breakpoint-up(sm) {
+    flex: 1 0 48%;
+    &:last-of-type {
+      flex-grow: 0;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    flex: 1 0 30%;
+    max-width: 300px;
+    &:nth-last-child(-n + 2) {
+      flex-grow: 0;
+    }
+  }
+  // @include media-breakpoint-up(xlg) {
+  //   flex: 1 0 23%;
+  //   &:nth-last-child(-n + 2) {
+  //     flex-grow: 0;
+  //   }
+  // }
+}

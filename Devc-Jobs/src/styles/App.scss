@@ -5,12 +5,14 @@
 @import 'spacings';
 @import 'fonts';
 
+.logo { width: 150px; }
 // dimensions
 .fullscreen {
   width: 100vw;
   height: 100vh
 }
 .full-width { width: 100% }
+.full-height { flex: 1.5; }
 
 // border classes
 .slim-border { border: $slim-border; }
@@ -19,7 +21,7 @@
 .border-r-circle { border-radius: 50%; }
 .border-r-sm { border-radius: 10px; }
 .border-r-xs { border-radius: 5px; }
-
+.border-color-primary { border-color: $primary-color-dark }
 // cursor classes
 .cursor-pointer { cursor: pointer; }
 .cursor-not-allowed { cursor: not-allowed; }
@@ -45,15 +47,16 @@
   outline: none;
   border: none;
   border-radius: 7px;
-  @extend .padding-horizontal-sm;
-  @extend .padding-vertical-xs;
-  @extend .font-weight-600;
+  @extend .padding-horizontal-md;
+  @extend .padding-vertical-sm;
+  @extend .font-weight-500;
   @extend .cursor-pointer;
 }
 
 .btn-primary {
   @extend .btn;
   background: $primary-color-dark;
+  color: $white;
 }
 
 .btn-disabled {
@@ -61,25 +64,48 @@
   background: $gray-color-dark;
 }
 
-.ripple-primary-light {
+.ripple {
   background-position: center;
   transition: background 0.8s;
+  &:active {
+    background-size: 100%;
+    transition: background 0s;
+  }
+}
+.ripple-primary-light {
+  @extend .ripple;
   &:hover {
     color: $white;
     background: $primary-color-light radial-gradient(circle, transparent 1%, $primary-color-dark-opacity 1%) center/15000%;
   }
   &:active {
     background-color: $primary-color-dark-opacity;
-    background-size: 100%;
-    transition: background 0s;
   }
 }
 
+.ripple-primary-dark {
+  @extend .ripple;
+  &:hover {
+    color: $white;
+    background: $primary-color-dark radial-gradient(circle, transparent 1%, $primary-color-dark-opacity 1%) center/15000%;
+  }
+  &:active {
+    background-color: $primary-color-dark-opacity;
+  }
+}
 .btn-gray { background: $gray-color-dark; }
 
 @include media-breakpoint-down(md) {
   .flex-equal-break-md {
    flex-basis: 100%;
    margin-right: 0px;
+  }
+}
+
+.splash-rectangle {
+  height: 100%;
+  flex: 3;
+  > img {
+    height: 100%;
   }
 }

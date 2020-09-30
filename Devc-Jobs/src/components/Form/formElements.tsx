@@ -1,6 +1,6 @@
 import React, { useState, useRef, useCallback } from 'react';
 import { Omit } from 'react-router';
-import { BsEye, BsEyeSlash } from 'react-icons/bs';
+import { BsEye, BsEyeSlash, BsSearch } from 'react-icons/bs';
 import ClipLoader from 'react-spinners/ClipLoader';
 import './form.scss';
 interface IGlobalProps {
@@ -68,6 +68,55 @@ export const InputField: React.FC<InputFieldProps> = ({
       <span ref={errRef} className="font-xs font-weight-400 color-google">
         {err}
       </span>
+    </label>
+  );
+};
+
+export interface SearchInputProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {
+  containerClassName?: string;
+  inputClassName?: string;
+}
+
+export const SearchInput: React.FC<SearchInputProps> = ({
+  placeholder,
+  value,
+  onChange,
+  name,
+  type,
+  className,
+  containerClassName,
+  inputClassName,
+  disabled = false,
+  ...rest
+}) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const interact = useCallback((type: 'blur' | 'focus'): void => {}, []);
+  return (
+    <label
+      className={`d-flex column margin-bottom-sm ${className}`}
+      style={{ width: '100%' }}>
+      <div
+        ref={ref}
+        className={`d-flex align-items-center nowrap form-control search-input-container bg-transparent ${containerClassName}`}>
+        <button
+          type="button"
+          className="padding-vertical-xs padding-horizontal-sm padding-right-sm search-btn">
+          <BsSearch size={20} className="color-primary-dark" />
+        </button>
+        <input
+          onBlur={(): void => interact('blur')}
+          onFocus={(): void => interact('focus')}
+          type={type}
+          name={name}
+          value={value}
+          onChange={onChange}
+          placeholder={placeholder}
+          disabled={disabled}
+          className={`search-field flex-equal padding-vertical-sm padding-horizontal-sm font-sm font-weight-500 ${inputClassName}`}
+          {...rest}
+        />
+      </div>
     </label>
   );
 };

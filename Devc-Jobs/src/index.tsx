@@ -7,7 +7,7 @@ import WebFont from 'webfontloader';
 
 WebFont.load({
   google: {
-    families: ['Montserrat:400,500,600', 'sans-serif', 'Georgia'],
+    families: ['Gothic A1', 'Poppins:300:500', 'Roboto', 'sans-serif'],
   },
 });
 ReactDOM.render(

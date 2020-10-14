@@ -74,6 +74,7 @@ $xlg: 60px;
 .margin-horizontal-lg { @include margin-horizontal($lg) }
 .margin-horizontal-xlg { @include margin-horizontal($xlg) }
 .margin-vertical-md { @include margin-vertical($md) }
+.margin-vertical-sm { @include margin-vertical($sm) }
 
 .line-height-24 { line-height: 24px };
 .line-height-42 { line-height: 42px };

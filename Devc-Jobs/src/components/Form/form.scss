@@ -16,8 +16,20 @@
   }
 }
 
+.search-input-container {
+  width: 100%;
+  .search-btn {
+    border-right: 1px solid $primary-color-dark
+  }
+  .search-field {
+    background: transparent;
+    border: none;
+    text-align: center;
+  }
+}
+
 input {
-  &:focus { border-color: #337AB7; }
+  &:focus:not(.search-field) { border-color: #337AB7; }
   &[type="checkbox"] {
     // box-shadow: 2px 2px 3px #b6b4b4;
     border-radius: 4px;
@@ -25,6 +37,8 @@ input {
     // background: #FFFFFF;
   }
 }
+
+.search-input-container:focus  { border-color: #337AB7; }
 
 .form-control {
   width: 100%;

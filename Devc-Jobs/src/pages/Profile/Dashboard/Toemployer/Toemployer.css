@@ -1,0 +1,30 @@
+.employer-portfolio{
+    padding: 2em 1em 1em 1em;
+    margin:  20px 10px;
+    /* width: 100%; */
+}
+
+.to-employer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.right-flex{
+    width: 100%;
+}
+
+    @media(min-width:1200px){
+        .right-flex{
+            width: 70%;
+        } 
+    }
+
+    @media(max-width:550px){
+        .employer-portfolio{
+            padding: 2em 1em 1em 1em;
+            margin:  20px 10px;
+            box-shadow: 0 0 0 0 ;
+        }
+    }
+

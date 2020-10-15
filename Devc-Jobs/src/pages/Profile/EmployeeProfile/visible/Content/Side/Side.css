@@ -1,0 +1,28 @@
+
+.sidebar-content{
+    background-color: #084482;
+    color: white;
+    height: 120vh; 
+    padding-top: 40px;
+}
+
+
+@media(max-width:800px){
+    .sidebar-content{
+        display: none;
+       
+    }
+ }
+
+
+
+.side-padding{
+    padding:  13px 37px;
+    width: 100%;
+}
+
+
+ .blue-hover:hover{
+     background-color: #00AEFF ;
+    
+ }

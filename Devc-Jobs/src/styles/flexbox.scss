@@ -9,7 +9,11 @@
   &.column { flex-direction: column; }
   &.align-items-center { align-items: center; }
   &.align-items-end { align-items: flex-end; }
-  &.justify-content-between { justify-content: space-between; }
+  &.justify-content-between { justify-content: space-between;}
+  /////////Newly Added
+  &.justify-content-around { justify-content: space-around;}
+  &.justify-content-evenly { justify-content: space-evenly;}
+  ///////////////////
   &.justify-content-center { justify-content: center; }
   &.justify-content-end { justify-content: flex-end; }
   &.align-self-end { align-self: flex-end; }
@@ -22,6 +26,7 @@
 
 .d-block { display: block; }
 .d-inline-block { display: inline-block; }
+.d-inline{ display: inline;}
 .flex-equal, .flex-equal-break-md {
   flex: 1
 }

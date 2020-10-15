@@ -1,0 +1,128 @@
+.modal{
+    background-color: white;
+    padding: 1.2em 1.5em;
+    width: 320px;
+    border-radius: 4px;
+    position: fixed;
+    left: 40%;
+    top: 45%;
+    z-index: 1;
+    box-shadow: 0 0 4px 1px rgb(129, 129, 129);
+    animation: modal 0.7s;
+}
+
+@keyframes modal{
+    0%{
+       transform: scale(0);
+    }
+}
+
+
+
+.input-skill{
+    padding: 10px 50px;
+    border: 1px solid #084482;
+    border-radius: 4px;
+}
+.search-field{
+    position: relative;
+    margin: 10px 0px;
+}
+
+.search-icon{
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    font-size: 15px;
+    color: rgb(185, 185, 185);
+}
+
+
+.down-icon{
+    position: absolute;
+    left: 245px;
+    top: 10px;
+    font-size: 15px;
+    color:  #6e90b3;;
+}
+
+.skill-button button{
+    background-color:  #00AEFF;
+    color: white;
+    padding: 10px 40px ;
+    border-radius: 4px;
+}
+
+.skill-button{
+   text-align: center;
+   margin: 40px 0 20px 0px;
+}
+
+
+@media(max-width:800px){
+    .modal{
+        padding: 1em 1.5em;
+        width: 300px;
+        border-radius: 4px;
+        position: fixed;
+         left: 20%;
+        top: 40%;
+    }  
+
+    .input-skill{
+        padding: 7px 35px;
+    }
+
+    .down-icon{
+        left: 212px;
+    }
+    
+}
+
+@media(max-width:380px){
+    .modal{
+        padding: 1em 1.5em;
+        width: 280px;
+        border-radius: 4px;
+        position: fixed;
+         left: 10%;
+        top: 40%;
+    }  
+
+    .input-skill{
+        padding: 7px 30px;
+    }
+
+    .down-icon{
+        left: 212px;
+    }
+    
+}
+
+
+@media(max-width:310px){
+    .modal{
+        padding: 1em 1.5em;
+        width: 250px;
+        border-radius: 4px;
+        position: fixed;
+         left: 5%;
+        top: 40%;
+    }  
+
+    .input-skill{
+        padding: 7px 20px;
+    }
+
+    .down-icon{
+        left: 190px;
+    }
+
+    .search-icon{
+        left: 7px;
+        top: 10px;
+        font-size: 12px;
+        color: rgb(185, 185, 185);
+    }
+    
+}

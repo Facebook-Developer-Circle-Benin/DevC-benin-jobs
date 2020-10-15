@@ -16,7 +16,7 @@
   width: 5px;
 }
 
-body { background: rgba(143, 143, 150, 0.5); }
+body { background: rgba(226, 226, 226, 0.5); }
 a { text-decoration: none; }
 a, span, p {
   line-height: 29px;
@@ -34,7 +34,7 @@ input {
   &[type=number] { -moz-appearance: textfield; }
 }
 button {
-  background: none;
+   background: none;
   &::-moz-focus-inner { border: none; }
   cursor: pointer;
 }

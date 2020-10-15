@@ -8,9 +8,35 @@
 // dimensions
 .fullscreen {
   width: 100vw;
-  height: 100vh
+  height:100vh
 }
 .full-width { width: 100% }
+
+//Newly Added
+.half-screen{ width: 50%}
+.one-third{ width: 30%}
+.third-one{ width: 70%}
+.one-fourth{width: 25%;}
+.fourth-one{width: 75%}
+.one-fifth{width: 20%}
+.fifth-one{width: 80%}
+
+
+//Newly added 
+.full-height{height: 120vh}
+.btn-width-1{
+  width: 25vh;
+}
+
+.side-width{
+  width: 160px;
+}
+
+.btn-width-2{
+  width: 12vh;
+}
+.box-shadow-bottom{box-shadow: 0px 2px 5px 0px rgb(68, 68, 68);}
+
 
 // border classes
 .slim-border { border: $slim-border; }
@@ -50,6 +76,8 @@
   @extend .font-weight-600;
   @extend .cursor-pointer;
 }
+
+
 
 .btn-primary {
   @extend .btn;

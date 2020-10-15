@@ -1,0 +1,207 @@
+/* The switch - the box around the slider */
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;    
+}
+
+ /* Hide default HTML checkbox  */
+.switch input {
+    opacity: 0;
+    width:  0;
+    height: 0;
+    
+}
+
+  /* the slider  */
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;  
+}
+
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;    
+}
+
+input:checked + .slider {
+    background-color: #084482;   
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #084482;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+/* Rounded Slider */
+ .slider.round {
+    border-radius: 34px;
+ }
+ .slider.round:before{
+    border-radius: 50%;
+ }
+
+ /* ////////////////IMAGE STYLE////////////// */
+  .profile-pics{
+      margin-right: 5px;
+  }
+ .profile-pics img{
+     width: 3rem;
+     border-radius: 5px;
+ }
+
+ /* ///////////SECTION//////////////// */
+.section{
+    box-shadow: 0px 0px 6px 2px rgb(68, 68, 68);
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.section-1{
+    background-color: #084482;
+    padding: 1em;
+    border-bottom: 1px #ccc solid;
+}
+
+.notification{
+    color: #084482;
+    font-size: 25px;
+}
+
+
+.section-2{
+    display: flex;
+    align-items: center;
+}
+
+.section-2 div:not(.profile-pics){
+    margin-right: 40px;
+}
+
+.profile-section{
+    display: flex;
+    align-items: center;
+}
+
+.profile-name p{
+   color: #084482 ;
+   font-size: large;
+   font-weight: bolder;
+}
+.available{
+    margin-left: 15px;
+}
+.small-font{
+    font-size: 15px;
+}
+
+.dark-blue{
+    color: #084482 ;
+}
+.red{
+    color: red;
+}
+
+.share-profile{
+    float: right;
+    padding: 1em 5em 1em 1em;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 55px;
+    margin-right: 90px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 5px 8px 0px rgb(68, 68, 68);
+}
+  @media(max-width:800px) {
+      .share-profile {
+        margin-right: 30px;
+      }
+  }
+
+/* /////////////////////Mobile view///////////// */
+
+.mobile-view{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    background-color:white;
+    box-shadow: 0px 0px 6px 2px rgb(68, 68, 68);
+}
+
+.mobile-notification{
+    font-size: 20px;
+}
+
+.mobile-section-1{
+    background-color: #084482;
+    padding: 1em 0.5em;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+}
+
+.sidebar{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    width: 0;
+    transition: 1s;
+    
+}
+
+ 
+.mobile-sidebar-content{
+    background-color: #084482;
+    color: white;
+    height: 100vh;
+    overflow-y: scroll; 
+    padding-top: 30px;   
+}
+
+
+@media(max-width:800px){
+   .section{
+       display: none;
+   }
+   /* .mobile-sidebar-content{
+    font-size: 20px;
+   } */
+}
+
+@media(min-width:800px){
+    .mobile-view{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+ }

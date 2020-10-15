@@ -1,0 +1,15 @@
+.social{
+    margin: 10px;
+    padding: 1.5em;
+}
+
+
+
+@media(max-width:550px){
+    .social{
+        width: 100%;
+        padding: 1em;
+        margin: 10px 0px;
+        box-shadow: 0 0 0 0 ;
+    }
+ }

@@ -1,0 +1,39 @@
+.edit-profile{
+    margin: 10px;
+    padding: 4em;
+}
+
+
+
+@media(max-width:1100px){
+    .edit-profile{
+        padding: 4em;
+        width: 100%;
+    }
+ }
+
+ @media(max-width:550px){
+    .edit-profile{
+        padding: 5em;
+        margin: 0px;
+        width: 100%;
+        border-radius: 0px;
+        box-shadow: 0 0 0 0 ;
+    }
+ }
+
+ @media(max-width:380px){
+    .edit-profile{
+        padding: 3em;
+        margin: 0px;
+        width: 100%;
+    }
+ }
+
+ @media(max-width:330px){
+    .edit-profile{
+        padding: 1em;
+        margin: 0px;
+        width: 100%;
+    }
+ }

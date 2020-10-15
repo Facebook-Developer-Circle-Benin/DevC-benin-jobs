@@ -1,7 +1,8 @@
 // Variables
-$sm: 10px;
+$sm: 20px;
 $xs: 5px;
 $md: 30px;
+$mlg: 41px;
 $lg: 50px;
 $xlg: 60px;
 
@@ -31,6 +32,7 @@ $xlg: 60px;
 .padding-md { padding: $md }
 .padding-sm { padding: $sm; }
 .padding-xs { padding: $xs; }
+.padding-mlg { padding: $mlg; }
 .padding-bottom-sm { padding-bottom: $sm; }
 .padding-bottom-xs { padding-bottom: $xs; }
 .padding-bottom-md { padding-bottom: $md; }
@@ -74,6 +76,7 @@ $xlg: 60px;
 .margin-horizontal-lg { @include margin-horizontal($lg) }
 .margin-horizontal-xlg { @include margin-horizontal($xlg) }
 .margin-vertical-md { @include margin-vertical($md) }
+.margin-vertical-sm { @include margin-vertical($sm) }
 
 .line-height-24 { line-height: 24px };
 .line-height-42 { line-height: 42px };

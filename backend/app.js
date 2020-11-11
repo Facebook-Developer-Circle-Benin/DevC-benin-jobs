@@ -1,15 +1,18 @@
 const express = require("express");
 const mongoose = require("mongoose");
-//const chalk = require('chalk');
+const chalk = require("chalk");
 const userApi = require("./routes/api/users");
 const jobApi = require("./routes/api/jobs");
-const indexRoute = require("./routes/index");
+const adminRoute = require("./routes/admin");
 const credential = require("./credential");
 
 const app = express();
 
 const PORT = process.env.PORT || 5000;
 const localhost = "127.0.0.1";
+
+//read from body
+app.use(express.json());
 
 //database config
 //defualt mongoose connection
@@ -29,13 +32,13 @@ db.once("open", () => {
 //database config
 
 //routes
+app.use("/admin", adminRoute);
 app.use("/users", userApi);
 app.use("/jobs", jobApi);
-app.use("/", indexRoute);
 
 app.listen(PORT, () => {
-  console.log("server running on ", PORT);
-  //console.log(chalk.green.bold(`The magic happens on ${localhost}:${PORT}`));
+  //console.log("server running on ", PORT);
+  console.log(chalk.green.bold(`The magic happens on ${localhost}:${PORT}`));
 });
 
 module.exports = app;

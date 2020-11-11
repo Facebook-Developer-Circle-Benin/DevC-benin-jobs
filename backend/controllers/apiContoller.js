@@ -10,5 +10,9 @@ exports.delete_user = (req, res) => {
 };
 
 exports.post_user = (req, res) => {
-  res.send("hope");
+  const newUser = new User(req.body);
+
+  newUser.save().then((user) => {
+    res.json(user);
+  });
 };

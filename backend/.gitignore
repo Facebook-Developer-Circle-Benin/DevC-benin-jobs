@@ -2,4 +2,4 @@ node_modules/
 /TODO.txt
 .env
 FEATURES.PNG
-client/node_modules
+client

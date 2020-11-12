@@ -1,10 +1,11 @@
 const express = require("express");
+require("dotenv").config();
 const mongoose = require("mongoose");
 const chalk = require("chalk");
 const userApi = require("./routes/api/users");
-const jobApi = require("./routes/api/jobs");
+const authApi = require("./routes/api/auth");
+
 const adminRoute = require("./routes/admin");
-const credential = require("./credential");
 
 const app = express();
 
@@ -16,7 +17,7 @@ app.use(express.json());
 
 //database config
 //defualt mongoose connection
-const mongoDB = credential.mongoURI;
+const mongoDB = process.env.mongoURI;
 
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
 
@@ -33,8 +34,8 @@ db.once("open", () => {
 
 //routes
 app.use("/admin", adminRoute);
-app.use("/users", userApi);
-app.use("/jobs", jobApi);
+app.use("/api/users", userApi);
+app.use("/api/auth", authApi);
 
 app.listen(PORT, () => {
   //console.log("server running on ", PORT);

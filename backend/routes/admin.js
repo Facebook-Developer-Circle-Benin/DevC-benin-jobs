@@ -8,6 +8,9 @@ AdminBro.registerAdapter(AdminBroMongoose);
 const adminBro = new AdminBro({
   databases: [mongoose],
   rootPath: "/admin",
+  branding: {
+    companyName: "TalentPool",
+  },
 });
 const ADMIN = {
   email: process.env.ADMIN_EMAIL || "admin@gmail.com",

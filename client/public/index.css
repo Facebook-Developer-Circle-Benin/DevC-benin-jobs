@@ -1,7 +1,0 @@
-html {
-  position: relative !important;
-  min-height: 100% !important;
-}
-body {
-  margin-bottom: 60px !important; /* Margin bottom by footer height */
-}
